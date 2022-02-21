@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login-page</title>
+
+    <link rel="stylesheet" href="public/output.css" />
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+
+    />
+
+  </head>
+
+  <body class="box-border">
+
+    <div
+
+      class="container-fluid flex flex-col items-center justify-center bg-blue min-h-screen"
+
+    >
+
+      <div
+
+        class="container flex flex-col items-center justify-center bg-white w-64 md:w-4/12 md:block sm:w-screen py-6 md:my-6 lg:my-12 md:px-4 rounded-lg shadow-2xl"
+
+      >
+
+        <h2 class="text-center text-4xl py-4 mb-4">Login</h2>
+
+        <div class="form h-auto">
+
+          <form action="submit.html" id="form">
+
+            <div class="user-input field relative">
+
+                <!-- input field -->
+
+                    <div class="fling px-3 py-1 block field relative">
+
+                      <label class="leading-tight block">Email</label>
+
+                      <input
+
+                      onkeyup="checkInputs()"
+
+                        class="py-3 px-4 my-2 placeholder-gray-600::placeholder focus:border-blue rounded-lg border w-full"
+
+                        type="text"
+
+                        id="email"
+
+                        placeholder="example@email.com"
+
+                      /> 
+
+                      <small class="text-ter text-sm small"  id="small"
+
+                      ></small
+
+                    >
+
+                    </div>
+
+                   
+
+            <!-- input field -->
+
+              <div class="input field px-3 py-1 relative block">
+
+                <label class="leading-tight block">Password</label>
+
+                <input
+
+                onkeyup="checkInputs()"
+
+                  class="py-3 px-4 my-2 placeholder-gray-600::placeholder focus:border-blue rounded-lg border w-full"
+
+                  type="password"
+
+                  id="password"
+
+                  placeholder="**********"
+
+                />
+
+                <small class="text-ter text-sm small" id="pass"></small>
+
+                <a class="text-blue text-sm hover:underline" href="#">Forgotten password?</a>
+
+              </div>
+
+              
+
+            
+
+            <!-- submit btn -->
+
+            <div class="submit px-3">
+
+              <input
+
+                type="submit"
+
+                id="submit"
+
+                value="Login"
+
+                class="text-center text-white bg-blue w-full py-2 mt-6 mb-4 rounded-lg cursor-pointer"
+
+              />
+
+            </div>
+
+          </form>
+
+        </div>
+
+        <!--  extra -->
+
+        <div class="extra">
+
+          <p class="text-center text-sm">
+
+            Already have an account?
+
+            <a class="pl-2 underline text-blue" href="signup.html">Sign up</a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+  </body>
+
+</html>
+
