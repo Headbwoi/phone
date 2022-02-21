@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Signup-page</title>
+
+    <link rel="stylesheet" href="public/output.css" />
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+
+    />
+
+  </head>
+
+  <body class="box-border">
+
+    <div
+
+      class="container-fluid flex flex-col items-center justify-center bg-blue min-h-screen"
+
+    >
+
+      <div
+
+        class="container flex flex-col items-center justify-center bg-white w-64 md:w-4/12 md:block sm:w-screen py-6 md:my-6 lg:my-12 md:px-4 rounded-lg shadow-2xl"
+
+      >
+
+        <h2 class="text-center text-4xl py-4 mb-4">Sign Up</h2>
+
+        <div class="form h-auto">
+
+          <form action="submit.htm" id="form" method="get">
+
+            <div class="fling px-3 py-1 block min-w-full field relative">
+
+              <label class="leading-tight block">Username</label>
+
+              <input
+
+                onkeyup="checkInputs()"
+
+                class="py-3 px-4 my-2 placeholder-gray-600::placeholder focus:border-blue rounded-lg border w-full"
+
+                type="text"
+
+                id="text"
+
+                placeholder="John Doe"
+
+              /><small class="text-ter text-sm" id="user"> </small>
+
+            </div>
+
+            <div class="fling px-3 py-1 block field relative">
+
+              <label class="leading-tight block">Email</label>
+
+              <input
+
+                onkeyup="checkInputs()"
+
+                class="py-3 px-4 my-2 placeholder-gray-600::placeholder focus:border-blue rounded-lg border w-full"
+
+                type="text"
+
+                id="email"
+
+                placeholder="example@email.com"
+
+              />
+
+              <small class="text-ter text-sm" id="small"></small>
+
+            </div>
+
+            <div class="fling px-3 py-1 block field relative">
+
+              <label class="leading-tight block">Password</label>
+
+              <input
+
+                onkeyup="checkInputs()"
+
+                class="py-3 px-4 my-2 placeholder-gray-600::placeholder focus:border-blue rounded-lg border w-full"
+
+                type="password"
+
+                id="password"
+
+                placeholder="**********"
+
+              />
+
+              <small class="text-ter text-sm" id="pass"></small>
+
+            </div>
+
+            <div class="fling px-3 py-1 block field relative">
+
+              <label class="leading-tight block">Confirm Password</label>
+
+              <input
+
+                onkeyup="checkInputs()"
+
+                class="py-3 px-4 my-2 placeholder-gray-600::placeholder focus:border-blue rounded-lg border w-full"
+
+                type="password"
+
+                id="password2"
+
+                placeholder="**********"
+
+              />
+
+              <small class="text-ter text-sm" id="pass2"></small>
+
+            </div>
+
+            <div class="submit px-3">
+
+              <input
+
+                type="submit"
+
+                id="submit"
+
+                value="Sign Up"
+
+                class="text-center text-white bg-blue w-full py-2 mt-6 mb-4 rounded-lg cursor-pointer"
+
+              />
+
+            </div>
+
+          </form>
+
+        </div>
+
+        <div class="extra">
+
+          <p class="text-center text-sm">
+
+            Already have an account?
+
+            <a class="pl-2 underline text-blue" href="login.html">Login</a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
+
